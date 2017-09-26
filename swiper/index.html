@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE 6 ]> <html class="ne_ua_ie6 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 7 ]> <html class="ne_ua_ie7 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 8 ]> <html class="ne_ua_ie8 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ne_ua_ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html lang="CN"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html" http-equiv="Content-Type">
+    <title>用Swiper做一个不一样的主页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="每一口的喜悦，从亚历山达开始。亚历山达绝不添加任何人造香精、人造色素等不必要的添加剂。亚历山达冰淇淋的味道、颜色都是由天然的原料直接得来。" />
+    <meta name="author" content="Alexander's --Mr.JiangXinyu">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+    <script type="text/javascript">
+    // 判断移动设备，自动跳至规定页面
+    /*(function() {
+        if(/s=noRedirect/i.test(location.search)) return; 
+        if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+            try {
+                if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    window.location.href = "https://www.alexanders.cn/";
+                } else if(/iPad/i.test(navigator.userAgent)) {
+                    window.location.href = "https://www.alexanders.cn/";
+                }
+            } catch(e) {}
+        }   
+    })();*/
+    // 判断是不是mac系统，如果是，则加上框架的class
+    /*if(navigator.platform.indexOf("Mac") > -1) document.documentElement.classList.add("ua-mac");*/
+    </script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="Swiper-3.4.2/dist/css/swiper.min.css">
+    <!-- Demo styles -->
+    <link rel="stylesheet" type="text/css" href="css/initialize_style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+<!-- Swiper -->
+    <div class="swiper-container swiper-container_menu">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+               <div class="logo"></div>
+               <ul id="nav" class="nav navbar-nav ">
+                  <li><a href="#"><span class="click">第一页</span></a></li>
+                  <li><a href="#"><span class="click">第二页</span></a></li>
+                  <li><a href="#"><span class="click">第三页</span></a></li>
+                  <li><a href="#"><span class="click">第四页</span></a></li>
+                  <li><a href="#"><span class="click">第五页</span></a></li>
+                  <li><a href="#"><span class="click">第六页</span></a></li>
+                  <li><a href="#"><span class="click">第七页</span></a></li>
+                  <li><a href="#"><span class="click">第八页</span></a></li>
+                  <li><a href="#"><span class="click">第九页</span></a></li>
+                  <li class="active"><a href="#"><span class="click">第十页</span></a></li>
+               </ul>
+            </div>
+            <div class="swiper-slide content">
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <!-- <div class="bar"></div> -->
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Content Swiper slide -->
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container_content">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/1.jpg) no-repeat;">
+                            <div class="swiper-container swiper-container-h">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide banner-bg bg-size" style="background:url(images/banner.jpg) no-repeat;">
+                                    </div>
+                                    <div class="swiper-slide banner-bg bg-size" style="background:url(images/tmall-bg.jpg) no-repeat;">
+                                    </div>
+                                    <div class="swiper-slide banner-bg bg-size" style="background:url(images/footer_bg.jpg) no-repeat;">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-h"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/2.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/3.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/4.jpg) no-repeat;">
+                            <!-- Swiper -->
+                            <div class="swiper-container swiper-container-idea">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div style="padding: 0.5em;">
+                                            <img style="width: 90%;margin:auto;" src="images/story/story_1.jpg">
+                                            <p style="padding: 5%;">中新网5月19日电 据中央气象台网站消息，5月19日06时继续发布高温黄色预警：预计，5月19日白天，华北北部和东部、内蒙古东南部和西部、辽宁西部等地的部分地区有35℃以上的高温天气，其中，辽宁西部、河北北部等地局地最高气温有37~39℃。<br/><br/>20日开始，上述地区的高温天气将趋于缓解。</p>
+                                            <a href="https://www.alexanders.cn" target="_blank" class="a_btn" style=""> 点击查看更多 </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide">Slide 10</div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-scrollbar"></div>
+                                <!-- Add Navigation -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/5.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/6.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/7.jpg) no-repeat;">
+
+                            <div class="swiper-container-goods swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Slide 1</div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-g"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/8.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/9.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-bg_style" style="background:url(images/10.jpg) no-repeat;">
+                            <div class="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-main"></div>
+                </div>
+                <!-- Content Swiper slide ****end -->
+
+            </div>
+        </div>
+    </div>
+
+<!-- Swiper JS -->
+<script src="Swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/base.js"></script>
+    
+<script type="javascripts">
+
+</script>
+</body>
+</html>
